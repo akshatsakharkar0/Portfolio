@@ -3,16 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Akshat Sakharkar | Software Engineer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom animations for a modern feel */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Smooth scroll on navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple website hosted for free.</p>
-    </header>
-    <footer>
-        <p>&copy; 2024 My Website</p>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header Section -->
+   <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-12 fade-in">
+    <h1 class="text-4xl font-bold">Akshat Sakharkar</h1>
+    <p class="mt-2 text-lg">Full-Stack Developer | Machine Learning Enthusiast</p>
+    <p class="mt-2 text-md text-gray-200 italic">Seeking an entry-level Software Developer position to leverage my skills in Python, .NET, and web technologies while contributing to innovative software solutions.</p>
+    <div class="mt-6">
+        <a href="#about" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">About Me</a>
+        <a href="#skills" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Skills</a>
+        <a href="#projects" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Projects</a>
+        <a href="#contact" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Contact</a>
+    </div>
+</header>
+
+<!-- About Me Section -->
+<section id="about" class="container mx-auto my-16 px-6 fade-in">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
+        <p class="mt-4 text-lg text-gray-600">A passionate and results-driven Software Engineer with experience in both frontend and backend technologies. I specialize in full-stack development, machine learning, and building innovative software solutions.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800">Education</h3>
+            <p class="mt-4 text-gray-700">
+                <strong>Lovely Professional University, Phagwara, India</strong><br>
+                Integrated (B. Tech + M. Tech) Degree in Computer Science, GPA: 7.76<br>
+                Graduated in June 2024
+            </p>
+        </div>
+    </div>
+</section>
+
+   <!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" class="container mx-auto my-16 px-6 fade-in">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-semibold text-gray-800">Selected Projects</h2>
+        <p class="mt-4 text-lg text-gray-600">Here are a few projects that showcase my skills in both frontend and backend development:</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+			<h3 class="text-xl font-semibold text-gray-800">Deep Learning in Healthcare Informatics</h3>
+			<p class="mt-4 text-gray-600">Developed a deep learning system to analyze patient data and generate treatment recommendations. Achieved 85% accuracy in recommendations.</p>
+			<p class="mt-4 text-blue-500">Technologies: Python, TensorFlow, Keras</p>
+			<a href="https://github.com/yourusername/deep-learning-healthcare" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+		</div>
+
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">Stock Market Prediction Model</h3>
+            <p class="mt-4 text-gray-600">Built a neural network model for stock price prediction with 82% accuracy rate. Integrated technical indicators for better prediction accuracy.</p>
+            <p class="mt-4 text-blue-500">Technologies: Python, Neural Networks, Pandas, NumPy</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">Portfolio Website</h3>
+            <p class="mt-4 text-gray-600">Designed and developed my personal portfolio website using HTML, CSS, and Tailwind CSS. It's fully responsive and showcases my work and skills.</p>
+            <p class="mt-4 text-blue-500">Technologies: HTML, Tailwind CSS, JavaScript</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+        <!-- Additional Projects -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">Weather Forecasting App</h3>
+            <p class="mt-4 text-gray-600">Developed a weather forecasting application that allows users to check real-time weather data using an API. Features interactive UI with weather details.</p>
+            <p class="mt-4 text-blue-500">Technologies: React, JavaScript, OpenWeather API</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">Task Management System</h3>
+            <p class="mt-4 text-gray-600">Built a task management web application that allows users to create, track, and complete tasks with user authentication and data persistence.</p>
+            <p class="mt-4 text-blue-500">Technologies: Node.js, Express, MongoDB, EJS</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-100 py-16 fade-in">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-12 transform transition duration-300 ease-in-out hover:scale-105">
+            Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-indigo-100 hover:text-indigo-800">
+                <h3 class="text-lg font-semibold text-gray-800 transition duration-300 ease-in-out hover:text-indigo-500">Frontend</h3>
+                <p class="mt-4 text-gray-600">HTML, CSS, Tailwind CSS, JavaScript</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-indigo-100 hover:text-indigo-800">
+                <h3 class="text-lg font-semibold text-gray-800 transition duration-300 ease-in-out hover:text-indigo-500">Backend</h3>
+                <p class="mt-4 text-gray-600">C#, Python, .NET, Django</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-indigo-100 hover:text-indigo-800">
+                <h3 class="text-lg font-semibold text-gray-800 transition duration-300 ease-in-out hover:text-indigo-500">Machine Learning</h3>
+                <p class="mt-4 text-gray-600">TensorFlow, Keras, Neural Networks</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-indigo-100 hover:text-indigo-800">
+                <h3 class="text-lg font-semibold text-gray-800 transition duration-300 ease-in-out hover:text-indigo-500">Tools</h3>
+                <p class="mt-4 text-gray-600">Git, Jira, Linux, RTC, CI/CD</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white py-16 fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold">Contact</h2>
+            <p class="mt-4 text-lg">Feel free to reach out if you'd like to collaborate or connect!</p>
+            <p class="mt-4 text-lg">
+                <a href="mailto:akshatsakharkar130@gmail.com" class="text-blue-400">akshatsakharkar130@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Akshat Sakharkar | All Rights Reserved</p>
     </footer>
+    
 </body>
 </html>
