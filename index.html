@@ -22,40 +22,349 @@
 </head>
 <body class="bg-gray-50 font-sans">
 
+
     <!-- Header Section -->
-   <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-12 fade-in">
-    <h1 class="text-4xl font-bold">Akshat Sakharkar</h1>
-    <p class="mt-2 text-lg">Full-Stack Developer | Machine Learning Enthusiast</p>
-    <p class="mt-2 text-md text-gray-200 italic">Seeking an entry-level Software Developer position to leverage my skills in Python, .NET, and web technologies while contributing to innovative software solutions.</p>
-    <div class="mt-6">
-        <a href="#about" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">About Me</a>
-        <a href="#skills" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Skills</a>
-        <a href="#projects" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Projects</a>
-        <a href="#contact" class="text-lg font-semibold text-white hover:text-indigo-200 px-4 py-2 transition duration-300">Contact</a>
+<header class="bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        
+        <!-- Logo / Name -->
+        <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white tracking-wide">
+            Akshat Sakharkar
+        </a>
+        
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition">Home</a>
+            <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition">About</a>
+            <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition">Projects</a>
+            <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition">Skills</a>
+            <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition">Contact</a>
+        </nav>
+        
+        <!-- Call-to-Action Button -->
+        <a href="resume.pdf" class="hidden md:inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
+            Download Resume
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-gray-700 dark:text-white">
+            ☰
+        </button>
     </div>
 </header>
 
-<!-- About Me Section -->
-<section id="about" class="container mx-auto my-16 px-6 fade-in">
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
-        <p class="mt-4 text-lg text-gray-600">A passionate and results-driven Software Engineer with experience in both frontend and backend technologies. I specialize in full-stack development, machine learning, and building innovative software solutions.</p>
+
+<!-- Include Particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+<!-- Home Section -->
+<!-- Home Section -->
+<section id="home" class="relative h-screen flex flex-col justify-center items-center text-center bg-gray-900 text-white overflow-hidden">
+    
+    <!-- Particles.js Container -->
+    <div id="particles-js" class="absolute inset-0"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10">
+        
+        <!-- Floating Hero Image -->
+        <div class="w-52 h-52 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg flex justify-center items-center">
+			<img src="your-image.jpg" alt="Akshat Sakharkar" class="w-full h-full object-cover">
+		</div>
+        <!-- Animated Headline -->
+        <h1 class="mt-6 text-4xl md:text-5xl font-bold text-white">
+            🚀 Hi, I'm <span class="text-indigo-400">Akshat</span>!
+        </h1>
+        
+        <!-- Typewriter Effect -->
+        <p class="mt-4 text-xl md:text-2xl text-gray-300">
+            I am <span class="font-bold text-indigo-400" id="typing-text" style="min-width: 200px; display: inline-block;"></span>
+        </p>
+
+        <!-- Short Bio -->
+        <p class="mt-4 max-w-xl text-gray-400">
+            I craft immersive experiences through <span class="text-indigo-300">games</span>, <span class="text-blue-300">animations</span>, and <span class="text-green-300">software development</span>. Passionate about storytelling and interactive design.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="mt-6 space-x-4">
+            <a href="#projects" class="bg-indigo-500 px-6 py-3 rounded-md text-white shadow-lg hover:bg-indigo-600 hover:shadow-indigo-500/50 transition duration-300">
+                View My Work
+            </a>
+            <a href="#contact" class="bg-green-500 px-6 py-3 rounded-md text-white shadow-lg hover:bg-green-600 hover:shadow-green-500/50 transition duration-300">
+                Hire Me
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-6 flex space-x-4">
+            <a href="https://github.com/akshatsakharkar0" class="text-gray-400 hover:text-white hover:shadow-glow transition">
+                <i class="fab fa-github text-3xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshat-sakharkar/" class="text-gray-400 hover:text-blue-500 hover:shadow-glow transition">
+                <i class="fab fa-linkedin text-3xl"></i>
+            </a>
+            <a href="https://www.youtube.com/@awesomeSphere-1" class="text-gray-400 hover:text-red-500 hover:shadow-glow transition">
+                <i class="fab fa-youtube text-3xl"></i>
+            </a>
+        </div>
+
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-gray-800">Education</h3>
-            <p class="mt-4 text-gray-700">
-                <strong>Lovely Professional University, Phagwara, India</strong><br>
-                Integrated (B. Tech + M. Tech) Degree in Computer Science, GPA: 7.76<br>
-                Graduated in June 2024
+
+</section>
+
+<!-- Typewriter Effect Script -->
+<script>
+    const words = ["Game Developer", "Animator", "Software Engineer", "Storyteller"];
+    let i = 0;
+    let typingText = document.getElementById("typing-text");
+
+    function typeWriter() {
+        let word = words[i].split("");
+        let wordLength = Math.max(...words.map(w => w.length)); // Find the longest word to keep width fixed
+        typingText.style.minWidth = wordLength + "ch"; // Maintain space to prevent layout shift
+        
+        let loopTyping = function() {
+            if (word.length > 0) {
+                typingText.innerHTML += word.shift();
+                setTimeout(loopTyping, 100);
+            } else {
+                setTimeout(erase, 1500);
+            }
+        };
+        loopTyping();
+    }
+
+    function erase() {
+        let word = words[i].split("");
+        let loopErasing = function() {
+            if (word.length > 0) {
+                word.pop();
+                typingText.innerHTML = word.join("");
+                setTimeout(loopErasing, 50);
+            } else {
+                i = (i + 1) % words.length;
+                setTimeout(typeWriter, 500);
+            }
+        };
+        loopErasing();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        typingText.innerHTML = ""; // Set empty initially
+        setTimeout(typeWriter, 500);
+    });
+</script>
+
+<!-- Particles.js Config -->
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
+        },
+        interactivity: {
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" }
+            }
+        }
+    });
+</script>
+
+
+
+<!-- About Me Section -->
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="relative container mx-auto my-16 px-6 pt-24 fade-in text-center">
+    <!-- Parallax Background -->
+    <div class="rellax absolute inset-0 bg-gradient-to-r from-green-700 via-teal-500 to-indigo-600 opacity-50" data-rellax-speed="1"></div>
+
+    <div class="relative z-10">
+        <!-- Title -->
+        <h2 class="text-4xl md:text-5xl font-semibold text-white">
+            About Me
+        </h2>
+        
+        <!-- Summary -->
+        <p class="mt-4 text-lg md:text-xl text-black max-w-4xl mx-auto">
+           I'm a Software Developer, Game Developer, Story Writer, and Animator with a passion for building immersive digital experiences. Whether it's developing scalable software solutions, crafting engaging game mechanics, or bringing stories to life through animation, I thrive at the intersection of technology and creativity.
+
+Over the years, I’ve worked on software projects, game prototypes, and animation sequences, constantly pushing the boundaries of what’s possible. My journey has led me to explore full-stack development, AI-driven applications, physics-based game mechanics, and 2D/3D animation techniques.
+
+When I'm not coding or designing, you’ll probably find me crafting stories, experimenting with new animation styles, or diving deep into game development challenges. You can check out some of my work below!</p>
+
+        <!-- Mission Statement -->
+        <blockquote class="mt-12 max-w-xl mx-auto text-center text-xl italic text-gray-900">
+            "Leveraging technology to create impactful solutions that drive change in the world."
+        </blockquote>
+
+        <!-- Skills Section -->
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Animation -->
+    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+        <div class="flex justify-center mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/000000/animation.png" alt="Animation" class="h-12 w-12" />
+        </div>
+        <h3 class="text-2xl font-semibold text-purple-600">Animation</h3>
+        <p class="mt-4 text-gray-700 font-semibold">Tools Used:</p>
+        <ul class="mt-2 text-gray-700">
+            <li>🎨 Blender (2D/3D Animation)</li>
+            <li>🖌️ Photoshop</li>
+            <li>🖋️ Illustrator</li>
+        </ul>
+    </div>
+
+    <!-- Software Development -->
+    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+        <div class="flex justify-center mb-4">
+            <img src="https://img.icons8.com/ios-filled/50/000000/code.png" alt="Software Development" class="h-12 w-12" />
+        </div>
+        <h3 class="text-2xl font-semibold text-blue-600">Software Development</h3>
+        <p class="mt-4 text-gray-700 font-semibold">Languages & Frameworks:</p>
+        <ul class="mt-2 text-gray-700">
+            <li>💻 C#, C++, Python</li>
+            <li>🌐 Django (Web Development)</li>
+        </ul>
+    </div>
+
+    <!-- Game Development -->
+    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+        <div class="flex justify-center mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/6581/6581038.png" alt="Game Development" class="h-12 w-12" />
+        </div>
+        <h3 class="text-2xl font-semibold text-green-600">Game Development</h3>
+        <p class="mt-4 text-gray-700 font-semibold">Technologies & Engines:</p>
+        <ul class="mt-2 text-gray-700">
+            <li>🎮 Unity with C#</li>
+            <li>🕹️ Physics-based mechanics</li>
+        </ul>
+    </div>
+
+</div>
+
+
+        <!-- Let's Connect -->
+        <div class="mt-12 py-8">
+            <p class="text-xl text-gray-900">
+                Let’s create something amazing together! 🎮✨ <a href="#contact" class="text-indigo-500 underline">Get in touch</a>.
             </p>
         </div>
     </div>
 </section>
 
+<!-- Add Working Rellax.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+<script>
+  var rellax = new Rellax('.rellax', {
+    speed: 1,  // Adjust speed as needed
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
+
+
+
+
+
    <!-- Projects Section -->
+   
+<!-- Font Awesome Icons CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+<!-- Font Awesome Icons CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js"></script>
+
+<!-- Timeline Section -->
+<!-- Timeline Section -->
+<section id="timeline" class="container mx-auto my-16 px-6 pt-24 text-center fade-in">
+    <h2 class="text-4xl font-semibold text-gray-800 mb-8">My Journey</h2>
+
+    <div class="relative">
+		<!-- Timeline Line -->
+		<div class="absolute left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2"></div>
+			
+			<!-- Timeline Items -->
+			<div class="space-y-16">
+				<!-- Education Item -->
+				<div class="relative z-10 flex items-center justify-start">
+					
+					<!-- Icon on Timeline -->
+					<div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-indigo-600 text-white rounded-full flex justify-center items-center shadow-xl z-10">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+
+					<!-- Timeline Card -->
+					<div class="ml-16 p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300 flex-1 h-full max-w-xl">
+						<h3 class="text-2xl font-semibold text-indigo-600">Education</h3>
+						<p class="mt-4 text-gray-700">
+							<strong class="text-indigo-500">Lovely Professional University</strong><br>
+							B.Tech + M.Tech in Computer Science, GPA: 7.76<br>
+							Graduated in June 2024
+						</p>
+						<p class="text-sm text-gray-500">May 2020 - June 2024</p>
+					</div>
+				</div>
+
+
+
+            <!-- Work Experience Item -->
+            <div class="relative z-10 flex items-center justify-end">
+                <!-- Icon on Timeline -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-600 text-white rounded-full flex justify-center items-center shadow-xl">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <!-- Timeline Card -->
+                <div class="mr-16 p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300 flex-1 h-full max-w-xl">
+                    <h3 class="text-2xl font-semibold text-green-600">Work Experience</h3>
+                    <p class="mt-4 text-gray-700">
+                        <strong class="text-green-500">Philips</strong><br>
+                        Software Engineer Intern, 2023<br>
+                        Developed innovative solutions and improved product performance.
+                    </p>
+                    <p class="text-sm text-gray-500">Jan 2023 - Dec 2023</p>
+                </div>
+            </div>
+
+            <!-- Project Item -->
+            <div class="relative z-10 flex items-center justify-start">
+                <!-- Icon on Timeline -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex justify-center items-center shadow-xl">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <!-- Timeline Card -->
+                <div class="ml-16 p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300 flex-1 h-full max-w-xl">
+                    <h3 class="text-2xl font-semibold text-blue-600">Projects</h3>
+                    <p class="mt-4 text-gray-700">
+                        <strong class="text-blue-500">Deep Learning in Healthcare Informatics</strong><br>
+                        Developed a deep learning model for healthcare data analysis with 85% accuracy.
+                    </p>
+                    <p class="text-sm text-gray-500">Mar 2023 - Present</p>
+                </div>
+            </div>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
 <!-- Projects Section -->
-<section id="projects" class="container mx-auto my-16 px-6 fade-in">
+<section id="projects" class="container mx-auto my-16 px-6 fade-in pt-24">
     <div class="text-center mb-12">
         <h2 class="text-3xl font-semibold text-gray-800">Selected Projects</h2>
         <p class="mt-4 text-lg text-gray-600">Here are a few projects that showcase my skills in both frontend and backend development:</p>
@@ -69,9 +378,15 @@
 		</div>
 		<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
 			<h3 class="text-xl font-semibold text-gray-800">Online Voting System</h3>
-			<p class="mt-4 text-gray-600">Developed a secure and scalable online voting system with encryption and user authentication to ensure fair elections.</p>
+			<p class="mt-4 text-gray-600">Developed a secure and scalable online voting system with encryption and user authentication to ensure online fair elections.</p>
 			<p class="mt-4 text-blue-500">Technologies: Python, Django, PostgreSQL, JavaScript</p>
 			<a href="https://github.com/akshatsakharkar0/Online-Voting_System" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+		</div>
+		<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+			<h3 class="text-xl font-semibold text-gray-800">Spices Export Website</h3>
+			<p class="mt-4 text-gray-600">Designed and developed a responsive website for a spices export business, featuring product catalogs, inquiry forms, and payment integration.</p>
+			<p class="mt-4 text-blue-500">Technologies: HTML, CSS, JavaScript, Python, Django</p>
+			<a href="https://github.com/akshatsakharkar0/Exporter-Website" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
 		</div>
 
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
@@ -80,12 +395,7 @@
             <p class="mt-4 text-blue-500">Technologies: Python, Neural Networks, Pandas, NumPy</p>
             <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-            <h3 class="text-xl font-semibold text-gray-800">Portfolio Website</h3>
-            <p class="mt-4 text-gray-600">Designed and developed my personal portfolio website using HTML, CSS, and Tailwind CSS. It's fully responsive and showcases my work and skills.</p>
-            <p class="mt-4 text-blue-500">Technologies: HTML, Tailwind CSS, JavaScript</p>
-            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
-        </div>
+        
         <!-- Additional Projects -->
         <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
             <h3 class="text-xl font-semibold text-gray-800">Weather Forecasting App</h3>
@@ -101,11 +411,40 @@
         </div>
     </div>
 </section>
+<section id="gaming-projects" class="container mx-auto my-16 px-6 fade-in pt-24">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-semibold text-gray-800">Gaming Projects</h2>
+        <p class="mt-4 text-lg text-gray-600">Here are some of my game development projects showcasing my skills in Unity, Unreal Engine, and game mechanics:</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+			<h3 class="text-xl font-semibold text-gray-800">Angry Birds Clone</h3>
+			<p class="mt-4 text-gray-600">Developed a physics-based 2D game inspired by Angry Birds, where players launch objects to knock down structures.</p>
+			<p class="mt-4 text-blue-500">Technologies: Unity, C#, Rigidbody Physics, Particle Effects</p>
+			<a href="https://github.com/akshatsakharkar0/Angry-Bird" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+		</div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">2D Puzzle Game</h3>
+            <p class="mt-4 text-gray-600">Developed a 2D puzzle game where players move a ball through various obstacles and solve puzzles to progress through levels.</p>
+            <p class="mt-4 text-blue-500">Technologies: Unity, C#, Tilemap, Physics Engine</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800">Endless Runner</h3>
+            <p class="mt-4 text-gray-600">Designed and built an endless runner game with procedural level generation and power-ups for an engaging player experience.</p>
+            <p class="mt-4 text-blue-500">Technologies: Unity, C#, Shader Graph</p>
+            <a href="#" class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300">View Project</a>
+        </div>
+
+    </div>
+</section>
 
 
 
 <!-- Skills Section -->
-<section id="skills" class="bg-gray-100 py-16 fade-in">
+<section id="skills" class="bg-gray-100 py-16 fade-in pt-24">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-semibold text-gray-800 mb-12 transform transition duration-300 ease-in-out hover:scale-105">
             Skills
@@ -135,15 +474,41 @@
  
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-900 text-white py-16 fade-in">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-semibold">Contact</h2>
-            <p class="mt-4 text-lg">Feel free to reach out if you'd like to collaborate or connect!</p>
-            <p class="mt-4 text-lg">
-                <a href="mailto:akshatsakharkar130@gmail.com" class="text-blue-400">akshatsakharkar130@gmail.com</a>
+    <section id="contact" class="bg-gray-900 text-white py-20 fade-in pt-24">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold">Get in Touch</h2>
+        <p class="mt-4 text-lg text-gray-400">Feel free to reach out for collaborations, inquiries, or just to say hi! 🚀</p>
+
+        <div class="mt-8 space-y-6">
+            <!-- Email -->
+            <p class="text-lg">
+                📧 <a href="mailto:akshatsakharkar130@gmail.com" class="text-blue-400 hover:underline">akshatsakharkar130@gmail.com</a>
             </p>
+
+            <!-- Phone Number -->
+            <p class="text-lg">
+                📞 <a href="tel:+918668940491" class="text-blue-400 hover:underline">+91 8668940491</a>
+            </p>
+
+            <!-- Location -->
+            <p class="text-lg">
+                📍 Nagpur, Maharashtra, India
+            </p>
+
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.linkedin.com/in/akshat-sakharkar/" target="_blank" class="hover:text-blue-400 transition">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" class="h-8 w-8" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/akshatsakharkar0" target="_blank" class="hover:text-gray-400 transition">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" class="h-8 w-8" alt="GitHub">
+                </a>
+              
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-4">
